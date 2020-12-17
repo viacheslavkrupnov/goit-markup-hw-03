@@ -97,9 +97,6 @@ img {
   margin-left: 93px;
 }
 
-.site-nav .item {
-}
-
 .site-nav .item + .item {
   margin-left: 50px;
 }
@@ -290,18 +287,9 @@ img {
 }
 
 .team-content {
+  box-sizing: border-box;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.title.name {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.profession {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .team-list .title {
@@ -309,13 +297,18 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19px;
-  padding-bottom: 10px;
+
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .team-list .profession {
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19px;
+
+  margin: 0;
 }
 
 /* Button */
