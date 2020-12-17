@@ -294,7 +294,7 @@ img {
   padding-bottom: 30px;
 }
 
-.title > .name {
+.title.name {
   margin-top: 0;
   margin-bottom: 10px;
 }
