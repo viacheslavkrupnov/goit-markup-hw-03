@@ -79,7 +79,7 @@ img {
 
 .page-header {
   background-color: var(--primary-white-color);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 /* Main nav */
@@ -121,7 +121,7 @@ img {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--title-text-color);
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -131,6 +131,10 @@ img {
 /* Contacts */
 
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -167,6 +171,9 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Section */
@@ -180,9 +187,9 @@ img {
   padding-bottom: 94px;
 }
 
-.section.no-padding {
+.section.our-team {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 94px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -263,10 +270,11 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .team-item {
+  text-align: center;
+
   width: 270px;
   margin-right: 30px;
   background: var(--primary-white-color);
@@ -281,22 +289,19 @@ img {
   margin-right: 0;
 }
 
-.photo {
-  margin-bottom: 30px;
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.title.name {
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+.title > .name {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .profession {
-  display: flex;
-  justify-content: center;
-  padding-top: 0;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-list .title {
@@ -343,9 +348,13 @@ footer {
   background-color: var(--dark-bg-color);
 }
 
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo.footer {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -378,7 +387,12 @@ footer {
 
 .footer-link.mobile {
   display: inline-block;
-  margin-bottom: 60px;
+  margin-bottom: 0;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
 
 /* Стили для portfolio */
@@ -411,14 +425,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter:hover,
+.filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .portfolio .btn + .btn {
   margin-left: 8px;
-}
-
-.btn {
-  margin-bottom: 50px;
 }
 
 .works {
