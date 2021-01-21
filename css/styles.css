@@ -105,6 +105,10 @@ img {
   margin-right: 50px;
 } */
 
+.site-nav .item {
+  display: block;
+}
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -146,6 +150,10 @@ img {
 .contacts {
   display: flex;
   margin-left: auto;
+}
+
+.contacts .item {
+  display: block;
 }
 
 .contacts .item + .item {
@@ -380,8 +388,12 @@ footer {
 }
 
 .mail-footer {
-  display: inline-block;
+  display: block;
   margin-bottom: 9px;
+}
+
+.tel-footer {
+  display: block;
 }
 
 .footer-link:hover,
